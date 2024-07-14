@@ -1,8 +1,7 @@
-import React from 'react'
+import React from "react";
 
-
-const SimpleModal = ({isOpen, onClose, childern}) => {
-  if(!isOpen)  return null;
+const SimpleModal = ({ isOpen, onClose, children }) => {
+  if (!isOpen) return null;
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-30">
       <div className="bg-white rounded-lg p-4 shadow-lg w-64">
@@ -11,10 +10,10 @@ const SimpleModal = ({isOpen, onClose, childern}) => {
             &times;
           </button>
         </div>
-        <div className="flex flex-col space-y-2 mt-2">{childern}</div>
+        <div className="flex flex-col space-y-2 mt-2">{children}</div>
       </div>
     </div>
   );
 };
 
-export default SimpleModal
+export default SimpleModal;
